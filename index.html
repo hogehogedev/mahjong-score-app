@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script src="data.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 20px; }
+    #question { font-size: 72px; margin: 20px; }
+    #answer { font-size:72px; margin: 20px; }
+    .parent { color: red; font-weight: bold; }
+    .child { color: blue; font-weight: bold; }
+    input { width: 60px; }
+    button { margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+    <div>
+        <label>From 符: <input type="number" id="from" value="20"></label>
+        <label>To 符: <input type="number" id="to" value="50"></label>
+        <label>表示時間（秒）: <input type="number" id="time" value="4"></label>
+        <button onclick="startSession()">開始</button>
+    </div>
+
+  <div id="question"></div>
+  <div id="answer"></div>
+
+</body>
+</html>
